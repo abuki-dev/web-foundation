@@ -1,0 +1,54 @@
+:root{
+  --accent: #2a9d8f;
+  --muted: #f4f4f4;
+  --dark: #333;
+  --max-width: 1000px;
+}
+
+*{box-sizing: border-box}
+
+body{
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  color: #222;
+  background: #fff;
+}
+
+.container{
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.site-header{background:var(--dark);color:#fff}
+
+.main-nav{display:flex;gap:1rem;justify-content:center;padding:12px}
+.main-nav a{color:#fff;text-decoration:none;padding:8px 12px;border-radius:4px}
+.main-nav a:hover{background:rgba(255,255,255,0.06)}
+
+.site-title{text-align:center;margin:20px 0}
+
+.hero img{max-width:100%;height:auto;display:block;margin:0 auto}
+
+.universities{margin-top:20px}
+.university{background:var(--muted);padding:16px;border-radius:6px;margin:16px 0}
+.university h2{margin-top:0}
+.university figure{margin:0}
+
+.university-list{padding-left:1.2rem}
+
+.site-footer{background:var(--dark);color:#fff;padding:20px;text-align:center}
+
+.subscribe-form{display:flex;gap:8px;justify-content:center;padding-bottom:8px}
+.subscribe-form input[type="email"]{padding:8px;border-radius:4px;border:1px solid #ccc}
+.subscribe-form button{padding:8px 12px;border-radius:4px;border:0;background:var(--accent);color:#fff;cursor:pointer}
+.subscribe-form button:hover{background:rgba(42,157,143,0.8)}
+
+.visually-hidden{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+
+@media (min-width:700px){
+  .main-nav{justify-content:flex-start;padding-left:20px}
+  .universities{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
+}
