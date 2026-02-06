@@ -25,7 +25,7 @@ body{
 .site-header{background:var(--dark);color:#fff}
 
 .main-nav{display:flex;gap:1rem;justify-content:center;padding:12px}
-.main-nav a{color:#fff;text-decoration:none;padding:8px 12px;border-radius:4px}
+.main-nav a{color:#3d0707;text-decoration:none;padding:8px 12px;border-radius:4px}
 .main-nav a:hover{background:rgba(255,255,255,0.06)}
 
 .site-title{text-align:center;margin:20px 0}
